@@ -34,12 +34,12 @@ class Game extends Component {
 			<div className="game">
         <h2>Score: {this.state.score} <span className="message">{this.state.message}</span></h2>
 				<div className="pics">
-          { flagsArray.map(flag => (
+          { imageArray.map(flag => (
               <Pic 
                 handleClick={this.handleClick.bind(this)}
-                key={image.id}
-                link={image.link}
-                id={image.id} />
+                key={images.id}
+                link={images.link}
+                id={images.id} />
             )
           )}
         </div>
